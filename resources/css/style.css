@@ -1,0 +1,25 @@
+/* --------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------- */
+
+html{
+    background-color: #F0E8D1;
+    color: #000000;
+}
+
+
+/* --------------------------------------- */
+/* FONTS */
+/* --------------------------------------- */
+
+/* Define font faces */
+@font-face {
+    font-family: 'Barla_Liva_Nur';
+    src: url('../vendors/fonts/Barla_001_Liva_Nur.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2{
+	font-family: 'Barla_Liva_Nur';
+}
