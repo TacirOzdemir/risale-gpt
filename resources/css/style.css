@@ -7,19 +7,129 @@ html{
     color: #000000;
 }
 
+header{
+	padding-left:10px;
+}
+
+section{
+	padding-left:20px;
+}
 
 /* --------------------------------------- */
 /* FONTS */
 /* --------------------------------------- */
 
-/* Define font faces */
 @font-face {
     font-family: 'Barla_Liva_Nur';
-    src: url('../vendors/fonts/Barla_001_Liva_Nur.ttf') format('truetype');
+    src: url('../fonts/Barla_001_Liva_Nur.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-h1,h2{
-	font-family: 'Barla_Liva_Nur';
+@font-face {
+    font-family: 'Barla_Souvenir_Demi_BT';
+    src: url('../fonts/Barla_012_Souvenir_Demi_BT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barla_Aria_Script';
+    src: url('../fonts/Barla_001_Liva_Nur.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant_Garamond=';
+    src: url('../fonts/CormorantGaramond-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant_Garamond_Italic=';
+    src: url('../fonts/CormorantGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+}
+/* --------------------------------------- */
+/* Format heading, text, etc */
+/* --------------------------------------- */
+
+h1{
+	font-size: clamp(3.5rem, 4vw + 1rem, 5rem);
+}
+
+h2{
+	font-family: 'Barla_Souvenir_Demi_BT', sans-serif;
+	font-weight: normal;
+	font-size: clamp(1.8rem, 4vw + 1rem, 3.5rem);
+}
+
+h3{
+	font-family: 'Barla_Souvenir_Demi_BT', sans-serif;
+	font-weight: normal;
+	font-size: clamp(1rem, 4vw + 1rem, 2rem);
+	text-decoration: underline;
+}
+
+details {
+	border: 1px solid #F0E8D1;
+	border-radius: 4px;
+	padding: 0.5em 0.5em 0;
+}
+
+summary {
+	font-family: 'Barla_Liva_Nur', sans-serif;
+	font-weight: normal;
+	font-size: clamp(3rem, 4vw + 1rem, 5rem);
+	margin: -0.5em -0.5em 0;
+	padding: 0.5em;
+}
+
+details[open] {
+	padding: 0.5em;
+}
+
+details[open] summary {
+	border-bottom: 1px solid #F0E8D1;
+	margin-bottom: 0.5em;
+}
+
+p{
+	font-family: 'Barla_Souvenir_Demi_BT', sans-serif;
+	font-weight: normal;
+}
+
+li{
+	font-family: 'Barla_Souvenir_Demi_BT', sans-serif;
+	font-weight: normal;
+}
+
+a{
+	font-family: 'Barla_Souvenir_Demi_BT', sans-serif;
+	color: #000000;
+	font-weight: normal;
+}
+
+.normal-text{
+	font-family: 'Cormorant_Garamond', sans-serif;
+	font-weight: normal;
+}
+
+.italic-text{
+	font-family: 'Cormorant_Garamond_Italic', sans-serif;
+}
+
+.truth{
+    background:#eef4fa;
+    padding:16px;
+    margin:14px 0;
+    border-left:5px solid #457b9d;
+    border-radius:8px;
+}
+.quote{
+    background:#F0E8D1;
+    border-left:5px solid #1d3557;
+    padding:16px;
+    font-style:italic;
 }
