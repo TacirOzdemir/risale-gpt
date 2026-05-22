@@ -2,9 +2,23 @@
 /* BASIC SETUP */
 /* --------------------------------------- */
 
+* {
+    box-sizing: border-box;
+}
+
 html{
     background-color: #F0E8D1;
     color: #000000;
+	font-size: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 header{
@@ -12,7 +26,9 @@ header{
 }
 
 section{
-	padding-left:20px;
+    width: min(100%, 1100px);
+    margin: auto;
+    padding: 1rem;
 }
 
 /* --------------------------------------- */
@@ -51,18 +67,30 @@ section{
     font-family: 'Cormorant_Garamond_Italic=';
     src: url('../fonts/CormorantGaramond-Italic-VariableFont_wght.ttf') format('truetype');
 }
+
+
+/* --------------------------------------- */
+/* Responsive images */
+/* --------------------------------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* --------------------------------------- */
 /* Format heading, text, etc */
 /* --------------------------------------- */
 
 h1{
-	font-size: clamp(3.5rem, 4vw + 1rem, 5rem);
+	font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 h2{
 	font-family: 'Barla_Souvenir_Demi_BT', sans-serif;
 	font-weight: normal;
-	font-size: clamp(1.8rem, 4vw + 1rem, 3.5rem);
+	font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 h3{
@@ -71,7 +99,11 @@ h3{
 	font-size: clamp(1rem, 4vw + 1rem, 2rem);
 	text-decoration: underline;
 }
-
+img{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
 details {
 	border: 1px solid #F0E8D1;
 	border-radius: 4px;
@@ -98,6 +130,7 @@ details[open] summary {
 p{
 	font-family: 'Barla_Souvenir_Demi_BT', sans-serif;
 	font-weight: normal;
+	line-height: 1.7;
 }
 
 li{
@@ -114,10 +147,12 @@ a{
 .normal-text{
 	font-family: 'Cormorant_Garamond', sans-serif;
 	font-weight: normal;
+	line-height: 1.7;
 }
 
 .italic-text{
 	font-family: 'Cormorant_Garamond_Italic', sans-serif;
+	line-height: 1.7;
 }
 
 .truth{
@@ -133,3 +168,4 @@ a{
     padding:16px;
     font-style:italic;
 }
+
